@@ -3,14 +3,17 @@ package de.darcade.minecraftlottery;
 import org.bukkit.command.Command;
 import org.bukkit.command.CommandExecutor;
 import org.bukkit.command.CommandSender;
+import org.bukkit.configuration.file.FileConfiguration;
 import org.bukkit.entity.Player;
 
 public class CommandExecutorClass implements CommandExecutor {
 
 	private Main main;
+	private FileConfiguration config;
 	
 	public CommandExecutorClass(Main main) {
 		this.main = main;
+		this.config = main.getConfig();
 	}
 
 	@Override
