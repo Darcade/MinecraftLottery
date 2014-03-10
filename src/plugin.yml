@@ -1,0 +1,10 @@
+name: MinecraftLottery
+version: 0.1
+main: de.darcade.minecraftlottery.Main
+author: Darcade
+website: http://darcade.de/
+commands:
+     lottery:
+          description: none
+          usage: /<command> 
+          permission:  
