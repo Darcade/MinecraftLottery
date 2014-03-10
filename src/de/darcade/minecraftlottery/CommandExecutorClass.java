@@ -22,7 +22,7 @@ public class CommandExecutorClass implements CommandExecutor {
 		Player p =  (Player) sender;
 		if(cmd.getName().equalsIgnoreCase("lottery")){
 			if(args.length == 0) {
-				this.pringHelp(p);
+				this.printHelp(p);
 			}
 			
 			p.sendMessage(String.valueOf(args.length));
@@ -31,7 +31,7 @@ public class CommandExecutorClass implements CommandExecutor {
 		return false;
 	}
 
-	private void pringHelp(Player p){
+	private void printHelp(Player p){
 		p.sendMessage("Please enter some random ");
 	}
 }
