@@ -1,3 +1,5 @@
+//TODO Add check for config if there is an distance of 4 between min and max
+
 package de.darcade.minecraftlottery;
 
 import java.io.File;

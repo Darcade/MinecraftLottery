@@ -17,4 +17,5 @@ max: 27
 
 Message:
   help: 'Please enter 4 numbers between %MINIMUM% and %MAXIMUM%.'
-  example: 'Example: %COMMANDEXAMPLE%' 
+  example: 'Example: %COMMANDEXAMPLE%'
+  errorone: 'You are not allowed to use the same number more than once' 

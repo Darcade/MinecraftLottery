@@ -20,6 +20,11 @@ public class PlayerMessageReplacer {
 				.replaceAll("%MINIMUM%", min).replaceAll("%MAXIMUM%", max);
 		p.sendMessage(message);
 	}
+	
+	public void printErrorone(Player p){
+		String message = config.getString("Message.errorone");
+		p.sendMessage(message);
+	}
 
 	public void printExample(Player p) {
 		int max = config.getInt("max"), min = config.getInt("min");
