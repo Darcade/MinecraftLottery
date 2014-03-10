@@ -9,6 +9,12 @@
 config-version: 1
 db-version: 1
 
+#Minimum number to enter for lottery.
+min: 2
+
+#Maximal number to enter.
+max: 27
+
 Message:
-  help: Please enter 4 numbers between %MINIMUM% and %MAXIMUM%.
-  example: Example: %COMMANDEXAMPLE% 
+  help: 'Please enter 4 numbers between %MINIMUM% and %MAXIMUM%.'
+  example: 'Example: %COMMANDEXAMPLE%' 

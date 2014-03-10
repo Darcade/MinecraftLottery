@@ -10,10 +10,12 @@ public class CommandExecutorClass implements CommandExecutor {
 
 	private Main main;
 	private FileConfiguration config;
+	private PlayerMessageReplacer replacer;
 	
 	public CommandExecutorClass(Main main) {
 		this.main = main;
 		this.config = main.getConfig();
+		replacer = new PlayerMessageReplacer(main);
 	}
 
 	@Override
@@ -25,13 +27,15 @@ public class CommandExecutorClass implements CommandExecutor {
 				this.printHelp(p);
 			}
 			
-			p.sendMessage(String.valueOf(args.length));
+			//p.sendMessage(String.valueOf(args.length));
 			return true;
 		}
 		return false;
 	}
 
 	private void printHelp(Player p){
-		p.sendMessage("Please enter some random ");
+		replacer.printHelp(p);
+		replacer.printExample(p);
+		
 	}
 }
