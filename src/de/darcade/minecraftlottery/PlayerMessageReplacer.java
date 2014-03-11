@@ -21,8 +21,22 @@ public class PlayerMessageReplacer {
 		p.sendMessage(message);
 	}
 	
+	
+	//Returned if user is using a number more than once
 	public void printErrorone(Player p){
 		String message = config.getString("Message.errorone");
+		p.sendMessage(message);
+	}
+	
+	//Returned if User is not entering numbers
+	public void printErrortwo(Player p){
+		String message = config.getString("Message.errortwo");
+		p.sendMessage(message);
+	}
+	
+	//Returned if User is entering too large or to small numbers
+	public void printErrorthree(Player p){
+		String message = config.getString("Message.errorthree");
 		p.sendMessage(message);
 	}
 
